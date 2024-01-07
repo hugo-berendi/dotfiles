@@ -30,3 +30,5 @@ dolphinrc
 mimeapps.list
 user-dirs.dirs 
 user-dirs.locale
+hosts.yml
+gh/
