@@ -6,7 +6,6 @@
 * {
     border-radius: 0;
     font-family: 'Hack Nerd Font', "Font Awesome 6 Free", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
     min-height: 0;
     border-radius: 35px;
 }
@@ -34,7 +33,6 @@ window#waybar {
     background: @mauve;
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
-    font-size: 13;
 }
 
 #workspaces button.active {
