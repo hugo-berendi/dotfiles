@@ -5,8 +5,8 @@
 
 * {
     border-radius: 0;
-    font-family: 'Hack Nerd Font', FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    font-family: 'Hack Nerd Font', "Font Awesome 6 Free", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
     min-height: 0;
     border-radius: 35px;
 }
@@ -17,7 +17,6 @@ window#waybar {
 }
 
 #workspaces {
-    margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -30,7 +29,7 @@ window#waybar {
 #workspaces button {
     padding: 0px;
     margin: 0 3px;
-    min-width: 30px;
+    min-width: 20px;
     color: @mauve;
     background: @mauve;
     transition: all 0.3s ease-in-out;
@@ -41,7 +40,7 @@ window#waybar {
 #workspaces button.active {
     color: @mauve;
     background: @mauve;
-    min-width: 50px;
+    min-width: 35px;
     background-size: 400% 400%;
     opacity: 1.0;
 }
@@ -49,7 +48,7 @@ window#waybar {
 #workspaces button:hover {
     background: @mauve;
     color: @mauve;
-    min-width: 50px;
+    min-width: 35px;
     background-size: 400% 400%;
 }
 
@@ -97,13 +96,14 @@ window#waybar {
 #bluetooth,
 #custom-weather,
 tooltip {
-    background: linear-gradient(@cmantle, @cmantle) padding-box,
-                linear-gradient(135deg, rgb(203, 166, 247), rgb(245, 194, 231)) border-box;
+    background: linear-gradient(@cmantle, @cmantle) padding-box, linear-gradient(@mauve, @mauve) border-box;
     border-width: 3px;
     border-style: solid;
     border-color: transparent;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 tooltip {
@@ -174,10 +174,9 @@ tooltip {
 #custom-power {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-right: 5px;
     margin-left: 5px;
-    padding-right: 22px;
-    padding-left: 15px;
+    padding-right: 13px;
+    padding-left: 10px;
 }
 
 #custom-weather.severe {
