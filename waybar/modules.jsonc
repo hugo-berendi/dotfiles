@@ -72,7 +72,7 @@
 
   "network": {
     "format-wifi": "<span foreground='#F2CECF'> </span> ",
-    "format-ethernet": "<span foreground='#F2CECF'>󰈀</span> ",
+    "format-ethernet": "<span foreground='#F2CECF'>󰈀 </span> ",
     "format-linked": "{ifname} (No IP)  ",
     "format-disconnected": "<span foreground='#F2CECF'> </span> ",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% ",
@@ -90,7 +90,7 @@
     "on-click": "~/.config/scripts/toggle.sh bluetooth",
   },
 
-  "pulseaudio": {
+  "pipewire": {
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "format": "<span foreground='#EBDDAA'>{icon}</span> {volume}% ",
     "format-muted": "<span foreground='#EBDDAA'></span> Muted ",
