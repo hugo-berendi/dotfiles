@@ -33,3 +33,5 @@ user-dirs.locale
 hosts.yml
 gh/
 
+!/rofi/*
+
