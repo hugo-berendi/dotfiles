@@ -5,30 +5,30 @@
 add_newline = true
 
 # Sets user-defined palette
-palette = "catppuccin_mocha"
+palette = "rose_pine_moon"
 
 format = """
 [](base)\
 $os\
-[](fg:base bg:surface0)\
+[](fg:base bg:surface)\
 $directory\
-[](bg:surface1 fg:surface0)\
+[](bg:overlay fg:surface)\
 $git_branch\
 $git_status\
-[](bg:surface2 fg:surface1)\
+[](bg:muted fg:overlay)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:surface2 bg:overlay0)\
+[](fg:muted bg:subtle)\
 $time\
-[](fg:overlay0)\
+[](fg:subtle)\
 \n$character
 """
 
 [os]
 format = "[$symbol]($style)"
-style = "bg:base fg:mauve"
+style = "bg:base fg:iris"
 disabled = false
 
 [os.symbols]
@@ -76,11 +76,11 @@ Windows = ""
 
 [character]
 # Note the use of Catppuccin color 'maroon'
-success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
+success_symbol = "[❯](foam)"
+error_symbol = "[❯](love)"
 
 [directory]
-style = "fg:mauve bg:surface0"
+style = "fg:iris bg:surface"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -94,63 +94,52 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:base"
-format = '[[ $symbol $branch ](fg:mauve bg:surface1)]($style)'
+format = '[[ $symbol $branch ](fg:iris bg:surface1)]($style)'
 
 [git_status]
 style = "bg:base"
-format = '[[($all_status$ahead_behind )](fg:mauve bg:surface1)]($style)'
+format = '[[($all_status$ahead_behind )](fg:iris bg:surface1)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:mauve bg:surface2)]($style)'
+format = '[[ $symbol ($version) ](fg:iris bg:surface2)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:mauve bg:surface2)]($style)'
+format = '[[ $symbol ($version) ](fg:iris bg:surface2)]($style)'
 
 [golang]
 symbol = "ﳑ"
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:mauve bg:surface2)]($style)'
+format = '[[ $symbol ($version) ](fg:iris bg:surface2)]($style)'
 
 [php]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:mauve bg:surface2)]($style)'
+format = '[[ $symbol ($version) ](fg:iris bg:surface2)]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute:Second Format
-style = "bg:overlay0 fg:mauve"
+style = "bg:overlay0 fg:iris"
 format = '[ 󱑍 $time ]($style)'
 
 # palette tables
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.rose_pine_moon]
+base = "#232136"
+surface = "#2a273" 
+overlay = "#393552"
+muted = "#6e6a86"
+subtle = "#908caa"
+text = "#e0def4"
+love = "#eb6f92"
+gold = "#f6c177"
+rose = "#ea9a97"
+pine = "#3e8fb0"
+foam = "#9ccfd8"
+iris = "#c4a7e7"
+highlight-low = "#2a283e"
+highlight-med = "#44415a"
+highlight-high = "#56526e"
